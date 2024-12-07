@@ -27,3 +27,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+src/modul12/hw4/*.txt
