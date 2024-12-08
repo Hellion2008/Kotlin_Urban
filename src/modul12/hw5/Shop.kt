@@ -1,6 +1,6 @@
 package modul12.hw5
 
-abstract class Shop(val city: String) {
+abstract class Shop(val name: String, val city: String) {
 
     val countPhones: MutableMap<Phone, Int> = mutableMapOf()
 
