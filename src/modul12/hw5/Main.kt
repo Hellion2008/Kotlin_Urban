@@ -1,7 +1,7 @@
 package modul12.hw5
 
 fun main() {
-    println("Сеть магазинов по продаже телефонов")
+    val menu = MenuNetShop()
 
     val shopOne = TechnologiesShop(city = "Москва")
     val shopTwo = TechnologiesShop(city = "Ижевск")
@@ -19,6 +19,10 @@ fun main() {
         Xiaomi("Xiaomi 12T", "Желтый", 25000.0) to 200,
         Samsung("Samsung S12", "Черный", 45000.0) to 150
     ))
+
+    menu.shopList.addAll(listOf(shopOne, shopTwo))
+
+    menu.greeting("Приветствуем на сайте продажи новых телефонов!")
 
 
 }
