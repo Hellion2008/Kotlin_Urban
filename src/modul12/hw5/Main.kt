@@ -1,9 +1,9 @@
 package modul12.hw5
 
-fun main() {
+suspend fun main() {
     val menu = MenuNetShop()
 
-    val shopOne = TechnologiesShop(city = "Москва")
+    val shopOne = TechnologiesShop(city = "Москва", isRepairShop = true)
     val shopTwo = TechnologiesShop(city = "Ижевск")
 
     shopOne.countPhones.putAll(mapOf(
@@ -22,7 +22,9 @@ fun main() {
 
     menu.shopList.addAll(listOf(shopOne, shopTwo))
 
-    menu.greeting("Приветствуем на сайте продажи новых телефонов!")
+    while (true){
+        menu.firstStep("Приветствуем на сайте продажи новых телефонов!")
+    }
 
 
 }
